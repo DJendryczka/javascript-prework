@@ -18,7 +18,7 @@ function buttonClicked(argButtonName) {
 /**
  * Describe this function...
  */
-function getMoveName(argMoveId) {
+function getMoveName(argMoveId) {    
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
     return 'kamień';

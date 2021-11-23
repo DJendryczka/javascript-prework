@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 255, 64, 0.329);
+}
+
+.container {
+    width: 40%;
+    height: 300px;
+    background: rgba(63, 57, 57, 0.349);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 5px 10px 30px black;
+}
+
+h1 {
+    color: black;
+    margin: 40px;
+    border: solid black 1px;
+    padding: 40px;
+    border-radius: 10px;
+    background: blanchedalmond;
+    text-align: center;
+    text-shadow: 2px 4px 6px rgb(110, 101, 101);
+}
+
+h2 {
+    padding: 30px;
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    box-shadow: 5px 10px 30px black;
+    margin: 30px;
+    background: coral;
+}
+
+button:hover {
+    box-shadow: 2px 4px 8px black;
+}
+
+.message {
+    padding: 30px;
+}
