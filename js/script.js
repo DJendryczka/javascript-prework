@@ -1,24 +1,22 @@
 
 
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+let argButtonName, buttonPaper, buttonRock, buttonScissors;
 
-buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
+ buttonRock = document.getElementById('button-rock');
+ buttonPaper = document.getElementById('button-paper');
+ buttonScissors = document.getElementById('button-scissors');
 
 /**
- * Describe this function...
+ * Function clear message
  */
 function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
-  var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
-
+  let argComputerMove, argMoveId, argPlayerMove, computerMove, playerMove, randomNum
 /**
- * Describe this function...
+ * Function name of the mow
  */
-function getMoveName(argMoveId) {    
+function getMoveName(argMoveId) {
   console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
   if (argMoveId == 1) {
     return 'kamień';
@@ -33,7 +31,7 @@ function getMoveName(argMoveId) {
 }
 
 /**
- * Describe this function...
+ * Function result
  */
 function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
@@ -59,7 +57,6 @@ console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 }
 
-/*buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });*/
 
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 
