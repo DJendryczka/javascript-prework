@@ -26,12 +26,9 @@ function buttonClicked(argButtonName) {
 }*/
 function getMoveName(argMoveId) {
   switch(argMoveId) {
-  case  1 : 'kamień';
-  break;
-  case  2 : 'papier';
-  break;
-  case  3 : 'nożyce';
-  break;
+  case  1 : return 'kamień';
+  case  2 : return 'papier';
+  case  3 : return 'nożyce';
   default: printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
   return 'kamień';
   }
