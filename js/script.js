@@ -19,12 +19,12 @@ function getMoveName(argMoveId) {
   return 'kamień';
   }
 }
-/**
+/**`
  * Function result
  */
 function displayResult(argPlayerMove, argComputerMove) {
   
-  console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
+  console.log(`wywołano funkcję displayResults z argumentami: ${argPlayerMove}, ${argComputerMove}`);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz!');
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
@@ -36,7 +36,7 @@ function displayResult(argPlayerMove, argComputerMove) {
   } else {
     printMessage('Przegrywasz :(');
   }
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage(`Zagrałem ${argComputerMove}, a Ty ${argPlayerMove}`);
 }
 const playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
