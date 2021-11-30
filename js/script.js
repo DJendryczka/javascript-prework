@@ -15,7 +15,7 @@ function getMoveName(argMoveId) {
   case  1 : return 'kamień';
   case  2 : return 'papier';
   case  3 : return 'nożyce';
-  default: printMessage('Nie znam ruchu o id ${argMoveId}. Zakładam, że chodziło o "kamień".');
+  default: printMessage(`Nie znam ruchu o id ${argMoveId}. Zakładam, że chodziło o "kamień".`);
   return 'kamień';
   }
 }
