@@ -1,6 +1,5 @@
 
 
- let argComputerMove, argMoveId, argPlayerMove;
 /**
  * Function clear message
  */
@@ -11,25 +10,12 @@ function buttonClicked(argButtonName) {
 /**
  * Function name of the mow
  */
-/*function getMoveName(argMoveId) {
-  console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
-  if (argMoveId == 1) {
-    return 'kamień';
-  } else if (argMoveId == 2) {
-    return 'papier';
-  } else if (argMoveId == 3) {
-    return 'nożyce';
-  } else {
-    printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
-    return 'kamień';
-  }
-}*/
 function getMoveName(argMoveId) {
   switch(argMoveId) {
   case  1 : return 'kamień';
   case  2 : return 'papier';
   case  3 : return 'nożyce';
-  default: printMessage('Nie znam ruchu o id ' + argMoveId + '. Zakładam, że chodziło o "kamień".');
+  default: printMessage('Nie znam ruchu o id ${argMoveId}. Zakładam, że chodziło o "kamień".');
   return 'kamień';
   }
 }
